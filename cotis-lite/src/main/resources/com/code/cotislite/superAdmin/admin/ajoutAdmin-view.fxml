@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="240.0" style="-fx-background-color: #090909;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.code.cotislite.controller.superAdmin.admin.AjoutAdminController">
+   <children>
+      <TextField fx:id="pseudoAdminField" layoutX="39.0" layoutY="91.0" promptText="Pseudo" style="-fx-background-color: #fff;" />
+      <TextField fx:id="contactAdminField" layoutX="39.0" layoutY="177.0" promptText="Contact" style="-fx-background-color: #fff;" />
+      <PasswordField fx:id="passwordAdminField" layoutX="40.0" layoutY="134.0" promptText="Mot de passe" style="-fx-background-color: #fff;" />
+      <Button fx:id="insertAdminButton" layoutX="80.0" layoutY="216.0" mnemonicParsing="false" onMouseClicked="#insertAdminButtonAction" style="-fx-background-color: #242424;" text="Enregistrer" textFill="WHITE" />
+   <Button fx:id="closeAjoutAdminView" layoutX="203.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#closeAjoutAminViewButtonAction" prefHeight="3.0" prefWidth="27.0" style="-fx-background-color: red;" text="X" />
+   </children>
+</AnchorPane>

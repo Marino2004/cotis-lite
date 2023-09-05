@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="anchorPaneItineraire" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="510.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.code.cotislite.controller.superAdmin.chat.ChatController">
+   <children>
+      <ScrollPane layoutX="-1.0" layoutY="1.0" prefHeight="403.0" prefWidth="510.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Pane layoutY="49.0" prefHeight="355.0" prefWidth="510.0">
+                     <children>
+                        <Label layoutX="341.0" layoutY="25.0" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: #6F3ED1; -fx-background-radius: 10;" text="Bonjour cher Supérieur" textFill="WHITE" />
+                        <ImageView fitHeight="67.0" fitWidth="84.0" layoutX="7.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../media/utilisateur.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="74.0" layoutY="73.0" prefHeight="32.0" prefWidth="112.0" style="-fx-background-color: #000; -fx-background-radius: 10;" text="Comment tu vas ?" textFill="WHITE" />
+                        <Label layoutX="315.0" layoutY="122.0" lineSpacing="2.0" prefHeight="30.0" prefWidth="175.0" style="-fx-background-color: #6F3ED1; -fx-background-radius: 10;" text="Bien merci de vous inquiètez" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" />
+                        <ImageView fitHeight="67.0" fitWidth="84.0" layoutX="7.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../media/utilisateur.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="74.0" layoutY="176.0" prefHeight="30.0" prefWidth="119.0" style="-fx-background-color: #000; -fx-background-radius: 10;" text="Aurevoir Monsieur" textFill="WHITE" />
+                        <Label layoutX="405.0" layoutY="224.0" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #6F3ED1; -fx-background-radius: 10;" text="Beau travail" textFill="WHITE" />
+                        <ImageView fitHeight="67.0" fitWidth="84.0" layoutX="7.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../media/utilisateur.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="74.0" layoutY="270.0" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #000; -fx-background-radius: 10;" text="Bien jouez tu m'as eu !" textFill="WHITE" />
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="67.0" fitWidth="84.0" layoutX="2.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../media/utilisateur.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="69.0" layoutY="25.0" prefHeight="30.0" prefWidth="179.0" style="-fx-background-color: #000; -fx-background-radius: 10;" text="Bonjour cher Administrateur !" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <TextField layoutX="6.0" layoutY="404.0" prefHeight="42.0" prefWidth="373.0" />
+      <Button layoutX="381.0" layoutY="406.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="128.0" style="-fx-background-color: #5262BC; -fx-background-radius: 100;" text="Envoyez" textFill="WHITE" />
+   </children>
+</AnchorPane>

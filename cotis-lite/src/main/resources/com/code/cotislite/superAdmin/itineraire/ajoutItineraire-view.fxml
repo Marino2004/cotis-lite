@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="240.0" style="-fx-background-color: #090909;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.code.cotislite.controller.superAdmin.itineraire.AjoutIniteraireController">
+    <children>
+        <TextField fx:id="codeItiineraireField" layoutX="39.0" layoutY="91.0" promptText="Code" style="-fx-background-color: #fff;" />
+        <TextField fx:id="nomItiineraireField" layoutX="39.0" layoutY="130.0" promptText="Nom" style="-fx-background-color: #fff;" />
+        <Button fx:id="insertItineraireButton" onMouseClicked="#insertItineraireButtonAction" layoutX="79.0" layoutY="247.0" mnemonicParsing="false" style="-fx-background-color: #242424;" text="Enregistrer" textFill="WHITE" />
+        <Button fx:id="closeAJoutItineraireView" onMouseClicked="#CloseAJoutItineraireAction" layoutX="203.0" layoutY="14.0" mnemonicParsing="false" prefHeight="3.0" prefWidth="27.0" style="-fx-background-color: red;" text="X" />
+      <TextField fx:id="distanceItineraireField" layoutX="39.0" layoutY="168.0" promptText="Distance" style="-fx-background-color: #fff;" />
+      <TextField fx:id="prixItineraireField" layoutX="39.0" layoutY="208.0" promptText="Prix" style="-fx-background-color: #fff;" />
+    </children>
+</AnchorPane>

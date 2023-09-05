@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPaneItineraire" prefHeight="450.0" prefWidth="510.0" style="-fx-background-color: #313131;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.code.cotislite.controller.superAdmin.itineraire.TableItineraire">
+   <children>
+      <Button fx:id="buttonAjoutItineraire" layoutX="42.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#buttonAjoutItineraireAction" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #000;" text="ajouter" textFill="WHITE" />
+      <Button fx:id="bouttonModifierItineraire" layoutX="192.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#bouttonModifierItineraireAction" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #000;" text="modifier" textFill="WHITE" />
+      <Button fx:id="bouttonSupprimerItineraire" layoutX="342.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#bouttonSupprimerItineraire" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #000;" text="supprimer" textFill="WHITE" />
+      <TableView fx:id="itineraireTable" layoutY="103.0" prefHeight="387.0" prefWidth="510.0">
+        <columns>
+          <TableColumn fx:id="codeCol" prefWidth="75.0" text="Code" />
+          <TableColumn fx:id="nomCol" prefWidth="155.0" text="Nom" />
+            <TableColumn fx:id="distanceCol" prefWidth="104.0" text="Distance" />
+            <TableColumn fx:id="prixCol" prefWidth="175.0" text="Prix" />
+        </columns>
+      </TableView>
+      <TextField fx:id="filedRechercher" layoutX="42.0" layoutY="14.0" prefHeight="23.0" prefWidth="304.0" />
+      <Button fx:id="bouttonRechercher"  onAction="#bouttonRechercherAction" layoutX="359.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#bouttonSupprimerItineraire" prefHeight="23.0" prefWidth="107.0" style="-fx-background-color: #000;" text="Rechercher" textFill="WHITE" />
+   </children>
+</AnchorPane>

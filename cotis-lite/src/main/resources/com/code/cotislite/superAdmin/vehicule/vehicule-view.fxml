@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:controller="com.code.cotislite.controller.superAdmin.vehicule.TableVehicule" prefHeight="450.0" prefWidth="510.0" style="-fx-background-color: #313131;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="buttonAJouterVehiculeView" onMouseClicked="#buttonAJouterVehiculeView" layoutX="43.0" layoutY="22.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #000;" text="ajouter" textFill="WHITE" />
+      <Button layoutX="191.0" layoutY="22.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #000;" text="modifier" textFill="WHITE" />
+      <Button layoutX="340.0" layoutY="22.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #000;" text="supprimer" textFill="WHITE" />
+      <TableView fx:id="vehiculeTable" layoutY="74.0" prefHeight="416.0" prefWidth="510.0">
+        <columns>
+          <TableColumn fx:id="idVehiculeCol" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="numeroVehiculeCol" prefWidth="154.0" text="Numero" />
+            <TableColumn fx:id="modelVehiculeCol" prefWidth="100.0" text="Modèle" />
+            <TableColumn fx:id="nbPlaceVehiculeCol" prefWidth="180.0" text="Nb. Place" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
